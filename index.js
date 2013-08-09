@@ -16,7 +16,7 @@ function insertContent (what, to) {
 var pushWind = function (fn, cb) {
 	var self = this;
 
-	if (!self.available || self.state === 'WINDED') return;
+	if (!self.available) return;
 	self.available = false;
 
 	self.push.style.webkitTransitionDuration = '0s';
@@ -49,14 +49,15 @@ var pushWind = function (fn, cb) {
 	self.push.addEventListener('webkitTransitionEnd', windHandler, false);
 };
 
-var pushUnwind = function (cb) {
+var pushUnwind = function (fn, cb) {
 	var self = this;
 
-	if (!self.available || self.state === 'UNWINDED') return;
+	if (!self.available) return;
 	self.available = false;
 
 	self.push.style.webkitTransitionDuration = '0s';
 	self.push.style.webkitTransform = 'translate3d(-100%, 0, 0)';
+	insertContent(fn(), self.push);
 	setTimeout(function() {
 		self.element.style.webkitTransitionDuration = self.DURATION;
 		self.push.style.webkitTransitionDuration = self.DURATION;
