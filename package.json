@@ -1,0 +1,19 @@
+{
+    "name": "sioux-segue",
+    "version": "0.0.1",
+    "description": "Push and modal segue for sioux",
+    "main": "index.js",
+    "dependencies": {},
+    "styles": [ "style.css" ],
+    "keywords": ["sioux", "segue", "push", "modal"],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/gerhardberger/sioux-segue.git"
+    },
+    "homepage": "https://github.com/gerhardberger/sioux-segue",
+    "author": {
+        "name": "Gerhard Berger",
+        "email": "93.morph@gmail.com",
+        "url": "https://twitter.com/gerhard_berger"
+    }
+}
