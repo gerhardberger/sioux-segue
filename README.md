@@ -32,4 +32,4 @@ var segue = new Segue(document.querySelector('.foo'), 'push');
 The `contentFn` is a function which has to return a DOM node or node list, that will be inserted into the appearing window. The `callback` function will be called when the animation finished.
 
 ##### .unwind(contentFn, callback)
-In the `push` type same as the `wind` method but this will slide to the right. If the segue is `modal` __there is no `contentFn` argument just a `callback`.
+In the `push` type same as the `wind` method but this will slide to the right. If the segue is `modal` __there is no `contentFn` argument just a `callback`__.
