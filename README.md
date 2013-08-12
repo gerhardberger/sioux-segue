@@ -1,5 +1,7 @@
 # sioux Segue
 
+More info from sioux: [gerhardberger.github.io/sioux/](http://gerhardberger.github.io/sioux/)
+
 ``` batch
 npm install sioux-segue
 ```
@@ -33,3 +35,6 @@ The `contentFn` is a function which has to return a DOM node or node list, that 
 
 ##### .unwind(contentFn, callback)
 In the `push` type same as the `wind` method but this will slide to the right. If the segue is `modal` __there is no `contentFn` argument just a `callback`__.
+
+##### .init(contentFn, callback)
+Loads content to segue for the first time.
