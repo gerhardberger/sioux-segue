@@ -1,6 +1,6 @@
 {
     "name": "sioux-segue",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Push and modal segue for sioux",
     "main": "index.js",
     "dependencies": {},
@@ -10,6 +10,7 @@
         "type": "git",
         "url": "git://github.com/gerhardberger/sioux-segue.git"
     },
+    "license": "MIT",
     "homepage": "https://github.com/gerhardberger/sioux-segue",
     "author": {
         "name": "Gerhard Berger",
